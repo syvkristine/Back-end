@@ -1,0 +1,284 @@
+html, body {
+
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    background: linear-gradient(45deg, rgba(100,100,100,1) 0%,rgba(48,48,48,1) 100%);
+    color: #9C9C9C;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+    
+}
+
+body {
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+nav {
+
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+    display: grid; 
+    grid-template-columns: 1fr 150px 150px;
+    grid-gap: 3rem;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    color: #9C9C9C;
+    transition: .5s;
+    padding-right: 4rem;
+
+}
+
+nav a:hover {
+
+    color: #B074B2;
+    
+} 
+
+
+
+.tidsLinje {
+
+    width: 2px;
+    height: 3700px;
+    background: linear-gradient(to bottom,rgba(116, 116, 116, 0.712) 0%,rgba(100, 100, 100, 0.712) 100%);
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    
+}
+/*felles for alle på helesiden*/
+h1 {
+ 
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h2 {
+ 
+    font-size: 2rem;
+    font-weight: 400;
+    position: relative;
+    transform: rotate(-90deg);
+
+}
+
+h3 {
+
+    font-size: 1.5rem;
+}
+
+p {
+
+    font-size: 1.1rem;
+}
+
+.framVisningBakgrun {
+
+    width: 550px;
+    height: 550px;
+    border-radius: 80px;
+   
+}
+
+.portefølje {
+
+    margin-top: 20rem;
+
+}
+
+/*section 1*/
+.wrapper1 {
+
+    margin-left: 5%;
+    margin-right: 5%;
+    transition: 1s;
+}
+
+#secProsjekter > div:nth-child(odd) {
+
+
+    display: grid;
+    grid-template-columns: 350px 100px 1fr;
+    grid-gap: 12rem;
+    justify-content: center;
+    align-content: center;
+
+    
+    position: absolute;
+    top: 1000px;
+
+}
+
+#secProsjekter > div:nth-child(odd) .framVisningBakgrun {
+
+    border: 3px solid #6FACDD; 
+    transform: rotate(45deg);
+    left: -168px;
+    top: -360px;
+    z-index: -1;
+    position: relative;
+   
+  
+}
+
+#secProsjekter > div:nth-child(odd) .beskrivelseAvProsjekt {
+
+    z-index: 5;
+
+}
+
+
+#secProsjekter > div:nth-child(odd) h3 {
+
+    margin-top: 15rem;
+}
+
+#secProsjekter > div:nth-child(odd) h2 {
+
+    top: -50px;
+    left: 32px;
+  
+}
+
+.wrapper1:nth-child(odd) img {
+
+    width: 100%;
+    margin-top: 12rem;
+
+}
+
+
+
+
+/*her begynner section 2 / speilvent */
+
+#secProsjekter > div:nth-child(even) {
+
+    display: grid;
+    grid-template-columns: 1fr 100px 350px;
+    grid-gap: 8rem;
+    justify-content: center;
+    align-content: center;
+
+    
+    position: absolute;
+    top: 2000px;
+   
+
+}
+
+#secProsjekter > div:nth-child(even) .framVisningBakgrun {
+
+    border: 3px solid #DDBF6F;
+    top: -23rem;
+    left: -7rem;
+
+    transform: rotate(45deg);
+    z-index: 1;
+    position: relative;
+    
+
+}
+
+#secProsjekter > div:nth-child(even) .beskrivelseAvProsjekt {
+/*
+    position: absolute;
+    width: 400px;
+    left: 60rem;
+    margin-top: 24rem;
+*/
+}
+
+
+#secProsjekter > div:nth-child(even) h3 {
+
+    margin-top: 15rem;
+    text-align: end; 
+
+}
+
+
+#secProsjekter > div:nth-child(even) p {
+
+    text-align: end; 
+
+}
+
+#secProsjekter > div:nth-child(even) h2 {
+
+    top: -100px;
+    left: -92px;
+
+}
+
+.wrapper1:nth-child(even) .framvisningAvprosjekt img {
+
+    margin-top: 12rem;
+    width: 90%;
+
+}
+
+.wrapper1:nth-child(even) > div:nth-child(1) {
+    
+    order: 3;
+    
+}
+.wrapper1:nth-child(even) > div:nth-child(2) {
+    
+    order: 2;
+    
+}
+.wrapper1:nth-child(even) > div:nth-child(3) {
+    
+    order: 1;
+    
+}
+
+
+/*hentes ikke fra database*/
+
+.s4 {
+
+    border: 1px solid #9C9C9C;
+    background-image: url("img/bildeAvMeg.png");
+    background-position: center;
+    border-radius: 250px;
+    padding: 100px;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 10rem;
+
+}
+
+.omMeg {
+
+    text-align: center;
+    color: white;
+    margin-top: 15rem;
+    
+    
+}
+
+.omMeg h4 {
+
+    margin: 0;
+    font-size: 1.5rem
+    
+}
+
+.omMeg p {
+
+    margin: 0;
+    
+}
+
