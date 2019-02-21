@@ -42,8 +42,6 @@ nav a:hover {
     
 } 
 
-
-
 .tidsLinje {
 
     width: 2px;
@@ -54,6 +52,7 @@ nav a:hover {
     margin: auto;
     
 }
+
 /*felles for alle på helesiden*/
 h1 {
  
@@ -70,17 +69,7 @@ h2 {
     transform: rotate(-90deg);
 
 }
-/*
-h3 {
 
-    font-size: 1.5rem;
-}
-
-p {
-
-    font-size: 1.1rem;
-}
- */
 .framVisningBakgrun {
 
     width: 550px;
@@ -101,6 +90,7 @@ p {
     margin-left: 5%;
     margin-right: 5%;
     transition: 1s;
+
 }
 
 #secProsjekter > div:nth-child(odd) {
@@ -110,9 +100,7 @@ p {
     grid-template-columns: 400px 100px 1fr;
     grid-gap: 9rem;
     justify-content: center;
-    align-content: center;
-
-    
+    align-content: center; 
     position: absolute;
     top: 1000px;
 
@@ -120,15 +108,13 @@ p {
 
 #secProsjekter > div:nth-child(odd) .framVisningBakgrun {
 
-   /* border: 3px solid #6FACDD; */
     background-color:  #6FACDD;
     transform: rotate(45deg);
     right: -65rem;
     top: -300px;
     z-index: -1;
     position: relative;
-   
-  
+    
 }
 
 #secProsjekter > div:nth-child(odd) .beskrivelseAvProsjekt {
@@ -137,13 +123,12 @@ p {
 
 }
 
-
 #secProsjekter > div:nth-child(odd) h3 {
 
     margin-top: 15rem;
     font-size: 2rem;
-}
 
+}
 
 #secProsjekter > div:nth-child(odd) p {
 
@@ -164,11 +149,7 @@ p {
 
 }
 
-
-
-
 /*her begynner section 2 / speilvent */
-
 #secProsjekter > div:nth-child(even) {
 
     display: grid;
@@ -176,17 +157,13 @@ p {
     grid-gap: 8rem;
     justify-content: center;
     align-content: center;
-
-    
     position: absolute;
     top: 2000px;
-   
 
 }
 
 #secProsjekter > div:nth-child(even) .framVisningBakgrun {
 
-    /*border: 3px solid #DDBF6F; */
     background-color:  #DDBF6F;
     top: -300px;
     left: -1290px;
@@ -194,7 +171,6 @@ p {
     z-index: 1;
     position: relative;
     
-
 }
 
 #secProsjekter > div:nth-child(even) .beskrivelseAvProsjekt {
@@ -203,7 +179,6 @@ p {
 
 }
 
-
 #secProsjekter > div:nth-child(even) h3 {
 
     margin-top: 15rem;
@@ -211,7 +186,6 @@ p {
     font-size: 2rem;
 
 }
-
 
 #secProsjekter > div:nth-child(even) p {
 
@@ -239,20 +213,20 @@ p {
     order: 3;
     
 }
+
 .wrapper1:nth-child(even) > div:nth-child(2) {
     
     order: 2;
     
 }
+
 .wrapper1:nth-child(even) > div:nth-child(3) {
     
     order: 1;
     
 }
 
-
 /*hentes ikke fra database*/
-
 .s4 {
 
     border: 1px solid #9C9C9C;
@@ -271,8 +245,7 @@ p {
 
     text-align: center;
     color: white;
-    margin-top: 15rem;
-    
+    margin-top: 15rem; 
     
 }
 
@@ -290,17 +263,9 @@ p {
     
 }
 
-
-
-
-
-
-
-
-
+/*Her begyner den responsive delen*/
 @media only screen and (max-width: 1200px) {
     
-
     #secProsjekter > div:nth-child(odd) .framVisningBakgrun {
 
         display: none;
@@ -312,13 +277,10 @@ p {
         display: none;
     }
 
-
     #secProsjekter > div:nth-child(odd) {
 
         display: flex;
         flex-direction: column-reverse; 
-
-     
 
     }
 
@@ -333,16 +295,16 @@ p {
         display: flex;
         flex-direction: column; 
      
-    
     }
-
 
     h2 {
     
         display: none;
+
     }
 
     #secProsjekter > div:nth-child(even) h3 {
+
         margin-top: 2rem; 
        
     }
@@ -357,7 +319,6 @@ p {
 
         margin-top: 0;
 
-    
     }
 
 
@@ -367,8 +328,6 @@ p {
 
     }
         
-
-
 }
 
 @media only screen and (max-width: 550px) {
@@ -403,20 +362,13 @@ p {
 
     }
 
-
-
     nav img {
 
         width: 50px;
 
     }
  
-
 }
-
-
-
-/*Fikser nav*/
 
 @media only screen and (max-width: 450px) {
     
@@ -432,10 +384,6 @@ p {
         font-size: .8rem
         
     }
-   
-
-
-
 
 }
 
