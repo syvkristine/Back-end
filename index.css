@@ -289,3 +289,26 @@ p {
     
 }
 
+
+
+
+
+@media only screen and (max-width: 550px) {
+    
+
+    nav {
+
+        grid-gap: 0rem;
+
+    }
+
+
+
+    nav img {
+
+        width: 50px;
+
+    }
+
+}
+
