@@ -158,7 +158,7 @@ p {
   
 }
 
-.wrapper1:nth-child(odd) img {
+.wrapper1:nth-child(odd) .framvisningAvprosjekt img {
 
     margin-top: 12rem;
 
@@ -286,6 +286,7 @@ p {
 .omMeg p {
 
     margin: 0;
+    font-size: 1rem
     
 }
 
@@ -293,9 +294,109 @@ p {
 
 
 
-@media only screen and (max-width: 550px) {
+
+
+
+
+@media only screen and (max-width: 1200px) {
     
 
+    #secProsjekter > div:nth-child(odd) .framVisningBakgrun {
+
+        display: none;
+
+    }
+
+    #secProsjekter > div:nth-child(even) .framVisningBakgrun {
+
+        display: none;
+    }
+
+
+    #secProsjekter > div:nth-child(odd) {
+
+        display: flex;
+        flex-direction: column-reverse; 
+
+     
+
+    }
+
+    #secProsjekter > div:nth-child(odd) h3 {
+
+        margin-top: 2rem;
+    }
+
+
+    #secProsjekter > div:nth-child(even) {
+
+        display: flex;
+        flex-direction: column; 
+     
+    
+    }
+
+
+    h2 {
+    
+        display: none;
+    }
+
+    #secProsjekter > div:nth-child(even) h3 {
+        margin-top: 2rem; 
+       
+    }
+
+
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    .wrapper1:nth-child(even) .framvisningAvprosjekt img {
+
+        margin-top: 0;
+
+    
+    }
+
+
+    .wrapper1:nth-child(odd) .framvisningAvprosjekt img {
+
+        margin-top: 0rem;
+
+    }
+        
+
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .s4 {
+
+        width: 30%;
+    
+    }
+
+    .omMeg {
+
+        margin-top: 10rem;
+        
+    }
+
+    .omMeg h4 {
+
+        font-size: 1rem
+    
+    }
+
+    .portefølje {
+
+        margin-top: 10rem;
+    
+    }
+  
     nav {
 
         grid-gap: 0rem;
@@ -309,6 +410,33 @@ p {
         width: 50px;
 
     }
+ 
 
 }
+
+
+
+/*Fikser nav*/
+
+@media only screen and (max-width: 450px) {
+    
+    .omMeg h4 {
+
+        font-size: .8rem
+    
+    }
+
+    .omMeg p {
+
+        margin: 0;
+        font-size: .8rem
+        
+    }
+   
+
+
+
+
+}
+
 
