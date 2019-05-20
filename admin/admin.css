@@ -551,3 +551,44 @@ h1 {
       -webkit-transform: rotate(-405deg);
     }
   }
+
+
+
+  @media only screen and (max-width: 1000px) {
+   
+    main {
+
+      grid-template-columns: 450px;
+      grid-gap: 0;
+      
+    }
+    .innholdTilProsjektet {
+
+      grid-row: 2;
+    }
+
+    .innholdTilProsjektet textarea {
+
+      width: 22rem;
+    }
+
+    .innholdTilProsjektet input {
+
+      width: 22rem;
+      
+    }
+
+    .bildeOpplasting input {
+
+      width: 22rem;
+      display: block;
+    }
+
+    .innholdTilProsjektet .button {
+
+      padding: 1.1rem 7rem 1.1rem 7rem;
+    }
+    
+
+
+}
